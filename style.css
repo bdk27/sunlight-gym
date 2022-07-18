@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Noto Sans TC',sans-serif ;
     font-size: 10px;
-    overflow: hidden;
 }
 :root{
     --yellow: #fece02;
@@ -14,6 +13,10 @@
     --blue: #7cabbf;
     --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
 }
+section{
+    padding: 10rem 10%;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -70,17 +73,85 @@ header .icons i:hover{
     cursor: pointer;
 }
 
+/* home section */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .75),rgba(0, 0, 0, .75)),url(images/home.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.home .home-left{
+    flex-basis: 50%;
+}
+.home .home-left h1{
+    color: #fff;
+    font-size: 10rem;
+    margin-bottom: 3rem;
+}
+.home .home-left h1 span{
+    color: var(--yellow);
+    font-size: 15rem;
+}
+.home .home-left h3{
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1.6em;
+    letter-spacing: .5rem;
+    background: linear-gradient(to right, #4f4f4f, rgba(0,0,0,.1));
+    padding: 2rem;
+}
+.home .home-left h3 span{
+    color: var(--blue);
+    font-size: 5rem;
+}
+.btn{
+    margin-top: 5rem;
+}
+.btn a{
+    text-decoration: none;
+    background-color: var(--yellow);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--black);
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+}
+.home .home-right{
+    flex-basis: 50%;
+}
+.home .home-right video{
+    width: 90%;
+    margin-left: 5rem;
+    border-radius: 2rem;
+}
+
+
 
 /* media query */
-@media (max-width: 991px){
+@media (max-width: 1070px){
     html{
         font-size: 55%;
     }
     header nav ul li{
         margin: 10px 10px;
     }
+    .home .home-left h1{
+        font-size: 7rem;
+    }
+    .home .home-left h1 span{
+        font-size: 10rem;
+    }
+    .home .home-left h3 span{
+        font-size: 4rem;
+    }
 }
-@media (max-width: 768px){
+@media (max-width: 849px){
+    section{
+        padding: 5rem 10%;
+    }
     #menubtn{
         display: inline-block;
         margin-left: 5rem;
@@ -110,9 +181,31 @@ header .icons i:hover{
     header nav.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
+    .home{
+        display: block;
+    }
+    .home .home-right{
+        text-align: center;
+    }
+    .home .home-right video{
+        width: 70%;
+        margin-left: 0;
+    }
+    .btn{
+        margin-bottom: 5rem;
+    }
 }
 @media (max-width: 450px){
-    
+    .home .home-right video{
+        width: 100%;
+    }
+    .home .home-left h1{
+        font-size: 6rem;
+    }
+    .home .home-left h1 span{
+        font-size: 8rem;
+    }
+
 }
 
 
