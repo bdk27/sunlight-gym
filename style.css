@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC',sans-serif ;
+    font-size: 10px;
+    overflow: hidden;
+}
+:root{
+    --yellow: #fece02;
+    --black: #000002;
+    --blue: #7cabbf;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background-color: var(--yellow);
+    position: relative;
+}
+header img{
+    width: 12rem;
+    cursor: pointer;
+}
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+header nav ul li a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    position: relative;
+}
+header nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--black);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+header nav ul li a:hover::after{
+    width: 100%;
+}
+header .icons a{
+    text-decoration: none;
+    margin-left: 2rem;
+}
+header .icons i{
+    font-size: 3.5rem;
+    color: var(--black);
+}
+header .icons i:hover{
+    color: #fff;
+}
+#menubtn{
+    display: none;
+    font-size: 3.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+/* media query */
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    header nav ul li{
+        margin: 10px 10px;
+    }
+}
+@media (max-width: 768px){
+    #menubtn{
+        display: inline-block;
+        margin-left: 5rem;
+        transition: .2s;
+    }
+    #menubtn.fa-times{
+        transform: rotate(180deg);
+    }
+    header nav{
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--black);
+        clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+        transition: .5s;
+    }
+    header nav ul li{
+        display: block;
+        padding: 30px 10%;
+        margin: 0;
+        border-bottom: 1px solid #5b5b5b;
+    }
+    header nav ul li a{
+        color: #fff;
+    }
+    header nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+@media (max-width: 450px){
+    
+}
+
+
+
+
+
+
+
+
