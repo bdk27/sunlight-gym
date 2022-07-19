@@ -102,6 +102,7 @@ header .icons i:hover{
     letter-spacing: .5rem;
     background: linear-gradient(to right, #4f4f4f, rgba(0,0,0,.1));
     padding: 2rem;
+    animation-delay: .5s;
 }
 .home .home-left h3 span{
     color: var(--blue);
@@ -118,6 +119,7 @@ header .icons i:hover{
     color: var(--black);
     padding: 1.5rem 3rem;
     border-radius: 1rem;
+    animation-delay: 1s;
 }
 .home .home-right{
     flex-basis: 50%;
@@ -126,6 +128,18 @@ header .icons i:hover{
     width: 90%;
     margin-left: 5rem;
     border-radius: 2rem;
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(4rem);
+    animation: moveup .5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 
