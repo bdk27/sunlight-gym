@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sunlight gym</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 <!-- header section starts -->
@@ -88,7 +89,102 @@
 
 <!-- news section ends -->
 
+<!-- site section starts -->
+
+    <section class="site" id="site">
+        <div class="site-row">
+           <div class="site-left">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/site-1.jpg"></div>
+                        <div class="swiper-slide"><img src="images/site-2.jpg"></div>
+                        <div class="swiper-slide"><img src="images/site-3.jpg"></div>
+                        <div class="swiper-slide"><img src="images/site-4.jpg"></div>
+                        <div class="swiper-slide"><img src="images/site-5.jpg"></div>
+                        <div class="swiper-slide"><img src="images/site-6.jpg"></div>
+                        <div class="swiper-slide"><img src="images/site-7.jpg"></div>
+                        <div class="swiper-slide"><img src="images/site-8.jpg"></div>
+                        <div class="swiper-slide"><img src="images/site-9.jpg"></div>
+                        <div class="swiper-slide"><img src="images/site-10.jpg"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="site-right">
+                <h1 class="sub-title">場地介紹</h1>
+                <div class="site-col">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('aerobic')">訓練心肺(油壓)</p>
+                        <p class="tab-links" onclick="opentab('machine')">機械式重訓</p>
+                        <p class="tab-links" onclick="opentab('barbell')">自由槓重訓</p>
+                        <p class="tab-links" onclick="opentab('other')">其他</p>
+                    </div>
+                    <div class="tab-contents  active-tab " id="aerobic">
+                        <ul>
+                            <li>胸推 (Chest Press/Row)</li>
+                            <li>腿部伸展 (Leg Extension/Curl)</li>
+                            <li>推舉 (Overhead Press/Pulldow)</li>
+                            <li>腹部緊縮 (Ab Crunch / Back Extension)</li>
+                            <li>腿舉 (Leg Press)</li>
+                            <li>深蹲 (Squats)</li>
+                            <li>飛輪 (Spinning bike)</li>
+                            <li>背部訓練 (Back Stretcher)</li>
+                            <li>站姿抬腿 (Leg Raise)</li>
+                            <li>二頭捲曲 (Biceps Curl / Trice Extension)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="machine">
+                        <ul>
+                            <li>胸推 (Chest Press/Row)</li>
+                            <li>腿部伸展 (Leg Extension/Curl)</li>
+                            <li>推舉 (Overhead Press/Pulldow)</li>
+                            <li>腹部緊縮 (Ab Crunch / Back Extension)</li>
+                            <li>腿舉 (Leg Press)</li>
+                            <li>深蹲 (Squats)</li>
+                            <li>飛輪 (Spinning bike)</li>
+                            <li>背部訓練 (Back Stretcher)</li>
+                            <li>站姿抬腿 (Leg Raise)</li>
+                            <li>二頭捲曲 (Biceps Curl / Trice Extension)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="barbell"></div>
+                    <div class="tab-contents" id="other"></div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+<!-- site section starts -->
+
     <script src="https://kit.fontawesome.com/5ed6520c8d.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            // Optional parameters
+            loop: true,
+        
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>

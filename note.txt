@@ -3,3 +3,23 @@
 場地介紹 site
 課程介紹 course
 連絡我們 contact
+
+多元化訓練心肺
+機械式重量訓練
+跑步機
+自由槓重量訓練
+啞鈴區
+瑜珈區
+置物櫃
+
+<dt class="lists" onclick="opentab(list1)">多元化訓練心肺 (油壓)<i class="fa-solid fa-caret-down" id="arrow-icon"></i></dt>
+<dd>胸推 (Chest Press/Row)</dd>
+<dd>腿部伸展 (Leg Extension/Curl)</dd>
+<dd>推舉 (Overhead Press/Pulldow)</dd>
+<dd>腹部緊縮 (Ab Crunch / Back Extension)</dd>
+<dd>腿舉 (Leg Press)</dd>
+<dd>深蹲 (Squats)</dd>
+<dd>飛輪 (Spinning bike)</dd>
+<dd>背部訓練 (Back Stretcher)</dd>
+<dd>站姿抬腿 (Leg Raise)</dd>
+<dd>二頭捲曲 (Biceps Curl / Trice Extension)</dd>

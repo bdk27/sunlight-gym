@@ -14,7 +14,7 @@
     --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 section{
-    padding: 10rem 10%;
+    padding: 5rem 10%;
     background-color: var(--black);
 }
 .sub-title{
@@ -26,7 +26,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10%;
+    padding: 0 10%;
     background-color: var(--yellow);
     position: relative;
 }
@@ -204,6 +204,77 @@ header .icons i:hover{
 .new:hover .layer{
     height: 100%;
 }
+
+/* site section */
+
+.site .site-row{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-left{
+    width: 50%;
+}
+.site-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.swiper{
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+.swiper .swiper-pagination-bullet{
+    background-color: #fff; 
+}
+.site-right{
+    padding: 5rem;
+}
+.site-right h1{
+    margin-bottom: 3rem;
+}
+.site-right .tab-titles{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.site-right .tab-links{
+    color: var(--yellow);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+.site-right .tab-links i{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+.site-right .tab-contents ul li{
+    list-style: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.arrow-up{
+    transform: rotate(180deg);
+}
+
 
 /* media query */
 @media (max-width: 1070px){
