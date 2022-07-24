@@ -332,6 +332,80 @@ header .icons i:hover{
     box-shadow: 0 0 15px 5px var(--yellow);
 }
 
+/* contact section */
+
+.contact .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.contact-left{
+    width: 50%;
+}
+.contact-right{
+    width: 50%;
+}
+.contact-left ul li{
+    color: #fff;
+    list-style: none;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.contact-left ul li a{
+    color: var(--yellow);
+    font-size: 2rem;
+}
+.contact-left .inf i{
+    color: var(--yellow);
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+.contact-left .inf .time{
+    margin-top: 1rem;
+    margin-left: 3.5rem;
+}
+.contact-left .inf .time li{
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.contact-left .time li{
+    padding: .5rem;
+    margin-top: 0;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: .6rem;
+    resize: none;
+}
+form .btn2{
+    background-color: var(--black);
+    border: 1px solid var(--yellow);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:var(--yellow);
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 1.5rem 0;
+    transition: .5s;
+}
+form .btn2:hover{
+    background-color: var(--yellow);
+    color: var(--black);
+}
 
 /* media query */
 @media (max-width: 1070px){
