@@ -13,6 +13,9 @@
     --blue: #7cabbf;
     --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
 }
+html{
+    scroll-behavior: smooth;
+}
 section{
     padding: 5rem 10%;
     background-color: var(--black);
@@ -407,6 +410,30 @@ form .btn2:hover{
     color: var(--black);
 }
 
+/* footer section */
+
+.footer{
+    padding: 2.5rem;
+    background-color: var(--yellow);
+}
+.footer .icons{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.footer .icons i{
+    color: var(--black);
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+.footer .icons i:hover{
+    color: #fff;
+}
+.footer p{
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}
 
 
 
