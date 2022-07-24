@@ -407,6 +407,9 @@ form .btn2:hover{
     color: var(--black);
 }
 
+
+
+
 /* media query */
 @media (max-width: 1070px){
     html{
@@ -498,6 +501,16 @@ form .btn2:hover{
         width: 100%;
         justify-content: center;
         margin: 0 0 5rem 0;
+    }
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact-left{
+        width: 100%;
+    }
+    
+    .contact-right{
+        width: 100%;
     }
 
 }
